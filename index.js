@@ -9,7 +9,7 @@ let score=0
 
 // To greet the user
 function greeting(){
-  print(chalk.yellowBright.bold.bgBlack.underline("How well do you know Manush?"));
+  print(chalk.greenBright.bold.bgBlack.underline("How well do you know Manush?"));
 
   print(` You think you know me well? Try answering some simple questions about me!
 `);
@@ -106,9 +106,9 @@ function quizQuestionFlow(question, no){
 
 function goodByePrint(){
 print(`${chalk.yellow.bold(`
-⚡ ⚡ ⚡ ⚡ ⚡ ⚡ ⚡ ⚡ ⚡ ⚡ ⚡ ⚡ ⚡
-YOUR SCORE = ${chalk.bold.greenBright(score.toString())}
-HIGH SCORE = ${chalk.bold.greenBright('10')}
+
+Your Score = ${chalk.bold.yellowBright(score.toString())}
+High Score= ${chalk.bold.yellowBright('10')}
 Made a high score?
 Let me Know your score at:
 Comment at: https://github.com/Manush54/KnowMe/issues/1
@@ -119,18 +119,13 @@ Thanks for playing!
 let questions = [
   {
     question:"What is Manush's Birthday?",
-    options: "\nA. 26/6 \nB. 24/6 \nC. 6/7 \nD. 8/7\n",
+    options: "\nA. 5/4 \nB. 24/6 \nC. 6/7 \nD. 8/7\n",
     correct: 'A'  
   },
   {
     question:"What is Manush's favourite dish?",
-    options: "\nA. Bhaji Pav\nB. Pizza\nC. Chinese\nD. Fafda-Jalebi\n",
+    options: "\nA. Dosa\nB. Pizza\nC. Chinese\nD. Pav-Bhaji\n",
     correct: 'B' 
-  },
-  {
-    question:"Who is Manush's favourite cricketer?",
-    options: "\nA. Virat Kohli\nB. MS Dhoni \nC. Steve Smith\nD. Shane Watson\n",
-    correct: 'C'  
   },
   {
     question:"What does Manush's favourite hobby?",
@@ -138,13 +133,13 @@ let questions = [
     correct: 'D'  
   },
   {
-    question:"What is Manush's favourite TV Series?",
-    options: "\nA. GOT\nB. Stranger Things\nC. Scam 1992\nD. Silicon Valley\n",
-    correct: 'B'  
+    question:"Who is Manush's favourite cricketer?",
+    options: "\nA. Virat Kohli\nB. MS Dhoni \nC. Steve Smith\nD. Shane Watson\n",
+    correct: 'C'  
   },
   {
     question:"Where would Manush like to travel?",
-    options: "\nA. Mountain\nB. Beach\nC. He doesn't like travelling\nD. Resort\n",
+    options: "\nA. Mountains\nB. Beach\nC. He doesn't like travelling\nD. Resort\n",
     correct: 'A'  
   },
   {
@@ -153,20 +148,10 @@ let questions = [
     correct: 'C'
   },
   {
-    question:"What is Manush's favourite area of interest?",
-    options: "\nA. Coding\nB. Philosophy\nC. Cosmoprinty\nD. All of these\n",
-    correct: 'D'  
-  },
-  {
     question:"What movie/series Manush Hated to its core?",
     options: "\nA. GOT\nB. The perks of being a wallflower\nC. LUDO\nD. All of these\n",
     correct: 'D',  
   },
-  {
-    question:"If Manush won a Nobel Prize, what would it be?",
-    options: "\nA. Best Bathroom Singer Award\nB. Best Memer Award\nC. Best Procractinator Award\nD. Best Nobel Person Award\n",
-    correct: 'B'
-  }
 ]
 
 // Driver function
